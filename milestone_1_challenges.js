@@ -46,3 +46,19 @@ function canDrive(name){
 }
 canDrive("June", 22);
 canDrive("Jane", 12);
+
+// Challenge 5: check the largest number
+function findLargest(a, b, c){
+ if (a > b && a > c){
+   console.log(a);
+ } else if (b > a && b > c){
+   console.log(b);
+ } else {
+   console.log(c);
+ }
+}
+
+
+findLargest(5, 9, 3); 
+findLargest(10, 10, 10); 
+findLargest(-1, -5, -3); 
