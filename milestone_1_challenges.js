@@ -36,3 +36,13 @@ function isNegative(num) {
 console.log(isNegative(-23));
 console.log(isNegative(55));
 
+function canDrive(name){
+ var age = 18;
+ if (age >= 18){
+  console.log( name + "is old enough to drive");
+ } else {
+  console.log(name + "is not old enough to drive");
+ }
+}
+canDrive("June", 22);
+canDrive("Jane", 12);
