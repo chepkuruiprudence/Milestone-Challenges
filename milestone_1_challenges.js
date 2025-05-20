@@ -21,3 +21,18 @@ function findPerimeter(L,W){
 
 findPerimeter(6, 7)
 findPerimeter(20,10)
+
+// Challenge 4: calculate perimeter of a rectangle
+
+function isNegative(num) {
+ if (num < 0) {
+   return true;
+ } else {
+   return false;
+ }
+}
+
+
+console.log(isNegative(-23));
+console.log(isNegative(55));
+
