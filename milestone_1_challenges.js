@@ -22,7 +22,7 @@ function findPerimeter(L,W){
 findPerimeter(6, 7)
 findPerimeter(20,10)
 
-// Challenge 4: calculate perimeter of a rectangle
+// Challenge 4: check negative
 
 function isNegative(num) {
  if (num < 0) {
@@ -36,6 +36,9 @@ function isNegative(num) {
 console.log(isNegative(-23));
 console.log(isNegative(55));
 
+
+// Challenge 5:can i drive
+
 function canDrive(name){
  var age = 18;
  if (age >= 18){
@@ -47,7 +50,7 @@ function canDrive(name){
 canDrive("June", 22);
 canDrive("Jane", 12);
 
-// Challenge 5: check the largest number
+// Challenge 6:Largest Number
 function findLargest(a, b, c){
  if (a > b && a > c){
    console.log(a);
@@ -63,7 +66,7 @@ findLargest(5, 9, 3);
 findLargest(10, 10, 10); 
 findLargest(-1, -5, -3); 
 
-// Challenge 6: calculate BMI weight
+// Challenge 7: calculate BMI weight
 function calculateBMI(weight,height){
  BMI = weight / (height * height)
  if  (BMI < 18.5){
@@ -80,7 +83,7 @@ function calculateBMI(weight,height){
 calculateBMI(68, 1.75);
 calculateBMI(85, 1.8);
 
-// Challenge 8: calculate BMI weight
+// Challenge 8: Greeting based on time
 function greetUser(name, hour){
  if (hour>5 && hour<11){
   console.log("Good morning," + name)
@@ -117,9 +120,24 @@ fizzBuzzCheck(10);
 
 fizzBuzzCheck(15); 
 
-fizzBuzzCheck(7); 
+fizzBuzzCheck(7);
 
-// Challenge 10: Sum of even numbers
+// Challenge 12: perimeter 2
+function perimeterTwo(l, num) {
+ if (l == "s") {
+   return 4 * num;
+ } else if (l == "c") {
+   return 6.28 * num;
+ } else {
+   return "Invalid shape";
+ }
+}
+
+console.log(perimeterTwo("s", 7)); 
+console.log(perimeterTwo("c", 4));
+
+
+// Challenge 11: Sum of even numbers
 function sumEvenNumbers(n){
  let sum =0;
  for (i=1; i <= n; i++){
