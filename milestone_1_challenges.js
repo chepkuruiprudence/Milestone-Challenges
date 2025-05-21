@@ -98,3 +98,25 @@ greetUser("Prudence", 14)
 greetUser("Prudence", 19)
 greetUser("Prudence", 23)
 
+// Challenge 9: fizzbuzz
+function fizzBuzzCheck(number){
+ if (number % 3 ==0 && number % 5 ==0){
+  console.log("FizzBuzz");
+ } else if (number % 3 == 0){
+   console.log("Fizz");
+  } else if(number % 5 ==0){
+   console.log("Buzz");
+  }else{
+   console.log(number);
+  }
+}
+
+fizzBuzzCheck(3); 
+
+fizzBuzzCheck(10); 
+
+fizzBuzzCheck(15); 
+
+fizzBuzzCheck(7); 
+
+
