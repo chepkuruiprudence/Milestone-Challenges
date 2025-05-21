@@ -119,4 +119,33 @@ fizzBuzzCheck(15);
 
 fizzBuzzCheck(7); 
 
+// Challenge 10: Sum of even numbers
+function sumEvenNumbers(n){
+ let sum =0;
+ for (i=1; i <= n; i++){
+  if (i%2 == 0){
+   sum+=i
+ }
+}
+console.log(sum);
+}
+
+sumEvenNumbers(6); 
+sumEvenNumbers(10);
+sumEvenNumbers(5);
+
+// Challenge 11: Sum of even numbers
+function powerUp(num, times){
+ let result=1;
+ for (i=0; i<times; i++){
+  result *=num;
+ }
+ return result;
+}
+
+console.log(powerUp(2, 3)); 
+console.log(powerUp(5, 0));
+console.log(powerUp(3, 4)); 
+console.log(powerUp(0));
+
 
