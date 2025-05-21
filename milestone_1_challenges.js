@@ -177,5 +177,21 @@ console.log(sumMultiples(10, 2));
 console.log(sumMultiples(15, 3)); 
 console.log(sumMultiples(7, 5)); 
 
+// Challenge 15: Sum of digits
+function sumDigits(num) {
+ let sum = 0;
+ 
+ while (num > 0) {
+   let digit = num % 10;
+   sum += digit;
+   num = Math.trunc(num / 10);
+ }
+ 
+ return sum;
+}
+
+console.log(sumDigits(173))
+
+
 
 
