@@ -93,7 +93,7 @@ function greetUser(name, hour){
  }
 }
 
-greetUser("Prudence", 9)
+greetUser("Prudence", 11)
 greetUser("Prudence", 14)
 greetUser("Prudence", 19)
 greetUser("Prudence", 23)
@@ -134,7 +134,7 @@ sumEvenNumbers(6);
 sumEvenNumbers(10);
 sumEvenNumbers(5);
 
-// Challenge 11: Sum of even numbers
+// Challenge 12: Multiply by itself
 function powerUp(num, times){
  let result=1;
  for (i=0; i<times; i++){
@@ -147,5 +147,35 @@ console.log(powerUp(2, 3));
 console.log(powerUp(5, 0));
 console.log(powerUp(3, 4)); 
 console.log(powerUp(0));
+
+// Challenge 13: Factorial
+function factorial(n){
+ if(n == 0 ){
+  return 1;
+ }else{
+  return factorial(n-1)*n
+ }
+}
+console.log(factorial(1));
+console.log(factorial(4));
+console.log(factorial(6));
+
+// Challenge 14: multiple sum
+function sumMultiples(n, divisor){
+ let sum = 0;
+
+ for (i=1; i<=n; i++){
+  if (i % divisor==0){
+   if (i % divisor == 0)
+    sum+=i;
+  }
+ }
+ return sum;
+}
+
+console.log(sumMultiples(10, 2)); 
+console.log(sumMultiples(15, 3)); 
+console.log(sumMultiples(7, 5)); 
+
 
 
