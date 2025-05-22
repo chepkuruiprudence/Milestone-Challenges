@@ -83,7 +83,7 @@ console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5));
 
 function sumEvenNumbers(arr){
   let sum=0;
-  
+
   for (let i=0; i<arr.length; i++){
     if (arr[i]%2 ==0){
       sum+=arr[i];
@@ -93,3 +93,21 @@ function sumEvenNumbers(arr){
 }
 
 console.log (sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+// Challenge 8 :Difference Between Sum of Even and Odd Numbers
+
+function differenceEvenOdd(numbers){
+  let sumEven = 0;
+  let sumOdd = 0;
+
+  numbers.forEach(function(num){
+    if (num%2==0){
+      sumEven+=num;
+    }else{
+      sumOdd+=num;
+    }
+  });
+  return sumEven-sumOdd;
+}
+
+console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
