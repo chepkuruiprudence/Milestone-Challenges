@@ -50,7 +50,7 @@ const candidates = [
 
 console.log(findWinner(candidates));; 
 
-// Challenge 3:longest word
+// Challenge 4:longest word
 
 function findLongestWord(arr){
  let longest = "";
@@ -62,3 +62,11 @@ for (let i= 0; i< arr.length; i++){
 return longest;
 }
 console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]));
+
+// Challenge 5:longest word
+
+function countProperties(obj){
+return Object.keys(obj).length;
+}
+
+console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
