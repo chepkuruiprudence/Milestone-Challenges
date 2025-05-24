@@ -170,3 +170,13 @@ function reverseLinearSearch(array, value){
 console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
 console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));
 
+// Challenge 13:Reverse Linear Search
+
+function countOccurences(){
+  const counts = {};
+
+  array.forEach(item => counts[item] = (counts[item] || 0) + 1);
+
+  return counts;
+}
+
