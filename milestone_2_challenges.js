@@ -170,6 +170,22 @@ function reverseLinearSearch(array, value){
 console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
 console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));
 
+// Challenge 13:Linear Search All 
+function linearSearchAll(arr, value) {
+  let indices = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === value) {
+      indices.push(i);
+    }
+  }
+
+  return indices;
+}
+
+console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
+console.log(linearSearchAll([5, 3, 7, 1, 4], 10));
+
 // Challenge 14:Count Occurrences
 
 function countOccurences(){
@@ -197,7 +213,7 @@ function removeDuplicates(array){
 
 console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
 
-// Challenge 1:Most Frequent
+// Challenge 16:Most Frequent
 function mostFrequent(array){
   const countMap = {};
   let maxCount = 0;
