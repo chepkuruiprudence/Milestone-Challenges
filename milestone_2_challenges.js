@@ -170,7 +170,7 @@ function reverseLinearSearch(array, value){
 console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
 console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));
 
-// Challenge 13:Reverse Linear Search
+// Challenge 14:Count Occurrences
 
 function countOccurences(){
   const counts = {};
@@ -180,12 +180,13 @@ function countOccurences(){
   return counts;
 }
 
-// Challenge 14:Remove Duplicates
+// Challenge 15:Remove Duplicates
 
 function removeDuplicates(array){
   const newArray=[];
 
-  for(const value of array){
+  for (let i = 0; i < array.length; i++){
+    let value = array[i];
     if (!newArray.includes(value)){
       newArray.push(value);
     }
@@ -195,3 +196,29 @@ function removeDuplicates(array){
 }
 
 console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
+
+// Challenge 1:Most Frequent
+function mostFrequent(array){
+  const countMap = {};
+  let maxCount = 0;
+  let mostFreequentValue;  
+
+  for (let i = 0; i < array.length; i++){
+    let item = array[i];
+
+    if (countMap[item]){
+      countMap[item]++;
+    }else{
+      countMap[item]=1;
+    }
+    if (countMap[item] > maxCount){
+      maxCount=countMap[item];
+      mostFreequentValue=item;
+    }
+  }
+  return mostFreequentValue;  
+}
+
+console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]));
+
+console.log(mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"]));
