@@ -180,3 +180,18 @@ function countOccurences(){
   return counts;
 }
 
+// Challenge 14:Remove Duplicates
+
+function removeDuplicates(array){
+  const newArray=[];
+
+  for(const value of array){
+    if (!newArray.includes(value)){
+      newArray.push(value);
+    }
+  }
+    return newArray;
+  
+}
+
+console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
