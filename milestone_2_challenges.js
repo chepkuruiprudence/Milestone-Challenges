@@ -217,7 +217,7 @@ console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
 function mostFrequent(array){
   const countMap = {};
   let maxCount = 0;
-  let mostFreequentValue;  
+  let mostFrequentValue;  
 
   for (let i = 0; i < array.length; i++){
     let item = array[i];
@@ -229,10 +229,10 @@ function mostFrequent(array){
     }
     if (countMap[item] > maxCount){
       maxCount=countMap[item];
-      mostFreequentValue=item;
+      mostFrequentValue=item;
     }
   }
-  return mostFreequentValue;  
+  return mostFrequentValue;  
 }
 
 console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]));
