@@ -19,3 +19,15 @@ function findPerimeter(l : number,w : number) {
 }
 findPerimeter(8,7);
 findPerimeter(5,8);
+
+// Challenge 4: check negative
+function isNegative(num: number){
+  if (num < 0){
+    console.log("Negative");
+  } else {
+    console.log("positive")
+  }
+}
+
+isNegative(3);
+isNegative(-8);
