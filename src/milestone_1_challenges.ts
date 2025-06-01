@@ -31,3 +31,16 @@ function isNegative(num: number){
 
 isNegative(3);
 isNegative(-8);
+
+// Challenge 5:can i drive
+function canDrive(name: string, age :number){
+  var age = 18;
+  if (age >=18){
+    console.log(name + "is old enough to drive");
+    } else {
+      console.log(name + "is not old enough to drive")
+    }
+}
+
+canDrive("John", 22)
+canDrive("Jane", 12);
