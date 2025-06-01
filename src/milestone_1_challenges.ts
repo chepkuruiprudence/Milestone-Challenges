@@ -11,3 +11,11 @@ function convert(minutes: number){
 }
 convert(5);
 convert(2);
+
+// Challenge 3: calculate perimeter of a rectangle
+
+function findPerimeter(l : number,w : number) {
+  console.log(2*(l+w));
+}
+findPerimeter(8,7);
+findPerimeter(5,8);
