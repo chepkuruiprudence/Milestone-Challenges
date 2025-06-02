@@ -114,5 +114,19 @@ function fizzBuzzCheck(number : number){
  fizzBuzzCheck(15); 
  
  fizzBuzzCheck(7);
+
+ // Challenge 12: perimeter 2
+function perimeterTwo(l : string, num : number) {
+  if (l == "s") {
+    return 4 * num;
+  } else if (l == "c") {
+    return 6.28 * num;
+  } else {
+    return "Invalid shape";
+  }
+ }
+ 
+ console.log(perimeterTwo("s", 7)); 
+ console.log(perimeterTwo("c", 4));
  
  
