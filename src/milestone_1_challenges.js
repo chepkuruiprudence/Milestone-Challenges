@@ -71,3 +71,18 @@ function calculateBMI(weight, height) {
 }
 calculateBMI(68, 1.75);
 calculateBMI(85, 1.8);
+
+// Challenge 11: Sum of even numbers
+function sumEvenNumbers(n : number){
+    let sum =0;
+    for (i=1; i <= n; i++){
+     if (i%2 == 0){
+      sum+=i
+    }
+   }
+   console.log(sum);
+   }
+   
+   sumEvenNumbers(6); 
+   sumEvenNumbers(10);
+   sumEvenNumbers(5);

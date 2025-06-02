@@ -115,7 +115,7 @@ function fizzBuzzCheck(number : number){
  
  fizzBuzzCheck(7);
 
- // Challenge 12: perimeter 2
+ // Challenge 10: perimeter 2
 function perimeterTwo(l : string, num : number) {
   if (l == "s") {
     return 4 * num;
@@ -128,5 +128,21 @@ function perimeterTwo(l : string, num : number) {
  
  console.log(perimeterTwo("s", 7)); 
  console.log(perimeterTwo("c", 4));
+
+ // Challenge 11: Sum of even numbers
+function sumEvenNumbers(n : number) : void{
+  let sum =0;
+  for (let i=1; i <= n; i++){
+   if (i%2 == 0){
+    sum+=i
+  }
+ }
+ console.log(sum);
+ }
+ 
+ sumEvenNumbers(6); 
+ sumEvenNumbers(10);
+ sumEvenNumbers(5);
+ 
  
  
