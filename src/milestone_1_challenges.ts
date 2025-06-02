@@ -158,5 +158,17 @@ function powerUp(num : number, times : number): number{
  console.log(powerUp(3, 4)); 
  console.log(powerUp(0, 0));
  
+
+ // Challenge 13: Factorial
+function factorial(n : number): number{
+ if(n == 0 ){
+  return 1;
+ }else{
+  return factorial(n-1)*n
+ }
+}
+console.log(factorial(1));
+console.log(factorial(4));
+console.log(factorial(6));
  
  
