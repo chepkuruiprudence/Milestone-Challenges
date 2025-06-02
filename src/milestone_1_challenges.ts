@@ -75,4 +75,23 @@ function calculateBMI(weight : number,height : number){
  
  calculateBMI(68, 1.75);
  calculateBMI(85, 1.8);
+
+ // Challenge 8: Greeting based on time
+function greetUser(name : string, hour : number){
+  if (hour>5 && hour<11){
+   console.log("Good morning," + name)
+  } else if(hour>12 && hour<17){
+   console.log("Good afternoon," + name)
+  }else if(hour>18 && hour<21){
+   console.log("Good evening," + name)
+  }else{
+   console.log("Good night, " + name)
+  }
+ }
+ 
+ greetUser("Prudence", 11)
+ greetUser("Prudence", 14)
+ greetUser("Prudence", 19)
+ greetUser("Prudence", 23)
+ 
  
