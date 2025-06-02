@@ -58,3 +58,21 @@ function findLargest(a : number, b : number, c : number){
 
 findLargest(5,7,9)
 findLargest(10, 10, 10)
+
+// Challenge 7: calculate BMI weight
+function calculateBMI(weight : number,height : number){
+   const BMI = weight / (height * height)
+  if  (BMI < 18.5){
+   console.log("Underweight")
+  } else if (BMI >= 18.5 && BMI<=24.9){
+    console.log("Normal weight")
+   } else if (BMI>=25 && BMI<=29.9){
+    console.log("Overweight")
+   }else if(BMI>=30){
+    console.log("Obese")
+   }
+ }
+ 
+ calculateBMI(68, 1.75);
+ calculateBMI(85, 1.8);
+ 
