@@ -44,3 +44,17 @@ function canDrive(name: string, age :number){
 
 canDrive("John", 22)
 canDrive("Jane", 12);
+
+// Challenge 6:Largest Number
+function findLargest(a : number, b : number, c : number){
+  if (a > b && a > c){
+    console.log(a);
+  } else if (b > a && b > c){
+    console.log(b);
+  } else {
+    console.log(c);
+  }
+}
+
+findLargest(5,7,9)
+findLargest(10, 10, 10)
